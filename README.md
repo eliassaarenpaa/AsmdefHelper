@@ -10,7 +10,7 @@ This library solve inconvenience of assembly definition on unity.
 Please add this line to `dependencies` of `Packages/manifest.json`.
 
 ```
-"dev.n5y.asmdefhelper": "https://github.com/naninunenoy/AsmdefHelper.git?path=Assets"
+"dev.n5y.asmdefhelper": "https://github.com/eliassaarenpaa/AsmdefHelper.git?path=Assets",
 ```
 
 ## Dependency Graph
