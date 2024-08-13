@@ -8,7 +8,7 @@ using UnityEditor;
 /// </summary>
 namespace AsmdefHelper.CompileLocker.Editor {
     public static class CompileLocker {
-        const string menuPath = "AsmdefHelper/Compile Lock";
+        const string menuPath = "Assembly Definitions/Lock Compilation &z";
 
         [MenuItem(menuPath, false, 1)]
         static void Lock() {

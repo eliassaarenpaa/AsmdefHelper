@@ -6,7 +6,7 @@ namespace AsmdefHelper.DependencyGraph.Editor {
         static AsmdefSelectionView selectionWindow;
         AsmdefGraphView graphView;
 
-        [MenuItem("AsmdefHelper/Open DependencyGraph", priority = 2000)]
+        [MenuItem("Assembly Definitions/Open Dependency Graph", priority = 2000)]
         public static void Open() {
             GetWindow<AsmdefGraphEditorWindow>("Asmdef Dependency");
         }

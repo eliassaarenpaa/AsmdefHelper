@@ -9,15 +9,15 @@ namespace AsmdefHelper.MultipleEdit.Editor {
     public class AsmdefMultiEditWindow : EditorWindow {
         static IList<InspectorWindowWrapper> windows = new List<InspectorWindowWrapper>();
 
-        [MenuItem("AsmdefHelper/Find all asmdef in project")]
+        [MenuItem("Assembly Definitions/Find All Assembly Definitions In Project")]
         public static void Search() {
             var browser = CreateInstance<ProjectBrowserWrapper>();
             browser.GetProjectBrowser();
             browser.SetSearch("t:AssemblyDefinitionAsset");
         }
 
-        [MenuItem("AsmdefHelper/Open selected asmdef inspector view")]
-        [MenuItem("Assets/AsmdefHelper/Open selected asmdef inspector view")]
+        [MenuItem("Assembly Definitions/Open Selected Assembly Definition In Inspector View")]
+        [MenuItem("Assets/Open Selected Assembly")]
         public static void Open() {
             var asmdefs = Selection.GetFiltered(typeof(AssemblyDefinitionAsset), SelectionMode.TopLevel);
             if (!asmdefs.Any()) {
@@ -36,7 +36,7 @@ namespace AsmdefHelper.MultipleEdit.Editor {
             }
         }
 
-        [MenuItem("AsmdefHelper/Apply all asmdef and close")]
+        [MenuItem("Assembly Definitions/Apply All Assembly Definitions & Close")]
         public static void Apply() {
             foreach (var w in windows) {
                 w.AllApply();

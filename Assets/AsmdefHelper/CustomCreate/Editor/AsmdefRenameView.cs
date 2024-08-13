@@ -10,7 +10,7 @@ namespace AsmdefHelper.CustomCreate.Editor {
         static string renameAsmdefPath = "";
         static string asmdefDirectory = "";
 
-        [MenuItem("Assets/AsmdefHelper/Rename asmdef")]
+        [MenuItem("Assets/Rename Assembly")]
         public static void ShowWindow() {
             // PathとNameの初期値
             var asset = Selection.activeObject;
